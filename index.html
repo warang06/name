@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+</head>
+<body>
+
+<h1>Hello</h1>
+
+<form id="myForm">
+    <label for="input1">Fistname:</label>
+    <input type="text" id="input1" name="input1"><br><br>
+    
+    <label for="input2">lastname</label>
+    <input type="text" id="input2" name="input2"><br><br>
+
+    <input type="button" value="Submit" onclick="showData()">
+</form>
+
+<p id="result"></p>
+
+<script>
+function showData() {
+    var input1Value = document.getElementById("input1").value;
+    var input2Value = document.getElementById("input2").value;
+
+    document.getElementById("result").innerHTML = "firstname: " + input1Value + "<br>" +
+                                                  "lastname: " + input2Value;
+}
+</script>
+
+</body>
+</html>
